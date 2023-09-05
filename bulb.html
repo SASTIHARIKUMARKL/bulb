@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On and Off</title>
+    <style>
+.button {
+  border: none;
+  background-color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;
+max-height: 30px;
+min-height: 50px;
+min-width: 80px;}
+.button2 {background-color: #008CBA;
+    max-height: 30px;
+min-height: 50px;
+min-width: 80px;} 
+body{
+    margin-top: 200px;
+    margin-left: 250px;
+}
+    </style>  
+</head>
+<body background="ASSET/bbg1.jpg" style="background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;" >
+    <img src="ASSET/off.gif" alt="bulb" id="demo" style="width: 100px; text-align: center;"><br><br>
+    <button class="button1" type="button" onclick="document.getElementById('demo').src='ASSET/on.gif'">On</button>
+   
+    <button class="button2" type="button" onclick="document.getElementById('demo').src='ASSET/off.gif'">Off</button>
+</body>
+</html>
